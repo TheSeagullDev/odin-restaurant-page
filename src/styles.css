@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 50px 30%;
+}
+
+nav {
+    flex: 1;
+}
+
+button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 34px;
+    width: 100%;
+}
