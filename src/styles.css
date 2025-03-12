@@ -1,3 +1,22 @@
+@font-face {
+    font-family: audiowide;
+    src: url("./assets/Audiowide-Regular.ttf");
+  }
+
+:root {
+    --bg-color: #050505;
+    --text-color: #fafafa;
+    --primary: #2c77ba;
+    --secondary: #0a1b29;
+    --accent: #3085cf;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Helvetica;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -15,4 +34,31 @@ button {
     border: none;
     font-size: 34px;
     width: 100%;
+    background-color: var(--primary);
+    color: var(--text-color);
+    border: none;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 20vw;
+}
+
+.title {
+    font-family: audiowide;
+    font-size: 42px;
+    padding: 10px 40px;
+}
+
+p {
+    font-size: 24px;
+    padding: 0 100px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: var(--accent);
 }
