@@ -62,3 +62,7 @@ p {
 button:hover {
     background-color: var(--accent);
 }
+
+.bold {
+    font-weight: bold;
+}

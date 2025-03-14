@@ -1,5 +1,7 @@
 import "./styles.css";
 import renderHome from "./home";
+import renderMenu from "./menu";
+import renderAbout from "./about";
 
 function clearContent() {
     const content = document.getElementById("content");
@@ -17,6 +19,13 @@ homeBtn.addEventListener("click", () => {
 const menuBtn = document.querySelector(".menu");
 menuBtn.addEventListener("click", () => {
     clearContent();
+    renderMenu();
+})
+
+const aboutBtn = document.querySelector(".about");
+aboutBtn.addEventListener("click", () => {
+    clearContent();
+    renderAbout();
 })
 
 renderHome();
